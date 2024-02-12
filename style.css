@@ -1,0 +1,482 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+
+
+}
+
+.navigation_bar {
+    color: red;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    z-index: 5;
+
+}
+
+
+.mymenus {
+    font-weight: bolder;
+    color: black;
+
+}
+
+.mymenus:hover {
+
+    color: rgb(83, 150, 173);
+    font-size: 22px;
+}
+
+.logo {
+    /* font-family: 'Josefin Sans', sans-serif; */
+
+    color: rgb(17, 15, 159);
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.allsection {
+    position: relative;
+    top: 70px;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    border: 5px solid black;
+}
+
+.section h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home-section {
+    border: none;
+    width: 100%;
+    background-image: url(fullStack.jpg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 90% 2%;
+    height: 500px;
+
+
+}
+
+
+.myinfo {
+    height: 450%;
+    width: 50%;
+    margin: 10% 4%;
+}
+
+.info-home {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.myname {
+    font-size: 50px;
+}
+
+.anima {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    animation-delay: 2s;
+
+}
+
+.anima span {
+    position: relative;
+    font-size: 30px;
+}
+
+.anima span::before {
+    content: "Coder";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.anima span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+
+    border-left: 1px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(5) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff7f5000;
+
+    }
+}
+
+@keyframes words {
+
+    0%,
+    5% {
+        content: "Coder";
+    }
+
+    10%,
+    15% {
+        content: "Designer";
+    }
+
+    20%,
+    25% {
+        content: "Tester";
+    }
+
+    41%,
+    100% {
+        content: "Java Full Stack Developer";
+
+    }
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+
+}
+
+
+.rsm {
+    height: 60px;
+    width: 120px;
+    border: none;
+    margin: 20px 30px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.rsm:hover {
+    background-color: white;
+    color: royalblue;
+    border: 3px solid royalblue;
+    transform: scale(1, 1);
+}
+
+.about-section {
+    background-color: white;
+    border: none;
+    width: 100%;
+    height: 700px;
+    padding: 20px;
+    display: flex;
+}
+
+.aboutsect {
+    height: 500px;
+}
+
+
+.myimg {
+    width: 50%;
+
+}
+
+.cobj {
+    padding: 30px 60px;
+}
+
+.career {
+    text-align: justify;
+    font-size: 22px;
+    margin-top: 50px;
+    text-indent: 20%;
+    font-weight: bolder;
+    line-height: 40px;
+}
+
+.Skills-section {
+    height: 800px;
+    border: none;
+
+    padding: 20px;
+}
+
+.rows td {
+    padding: 10px;
+}
+
+
+.tbl {
+    margin-top: 50px;
+}
+
+.skillHead {
+    font-size: 25px;
+    margin-bottom: 30px;
+
+    color: orangered;
+    font-variant: small-caps;
+    text-decoration: underline 3px solid orangered;
+}
+
+.paraData {
+    font-weight: bolder;
+
+
+}
+
+.rows td div {
+    height: 200px;
+    border-radius: 20px;
+
+
+}
+
+
+.rows td div:hover {
+    box-shadow: 0px 0px 10px grey;
+
+}
+
+.Project-section {
+    border: none;
+    padding: 20px;
+
+
+}
+
+.allprojects {
+    margin-top: 40px;
+    display: flex;
+    width: auto;
+}
+
+.card-title {
+    color: orangered;
+    font-weight: bolder;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+}
+
+.Project-section {
+    height: 800px;
+}
+
+.card-deck {
+    width: 50%;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.Contact-section {
+
+    padding: 20px;
+    margin-top: 10px;
+    min-width: 25rem;
+    align-items: center;
+    border: none;
+    width: 100%;
+
+}
+
+.cont-info {
+
+    margin-top: 10px;
+
+
+
+}
+
+.cont-info span {
+    font-weight: bolder;
+    color: rgb(30, 11, 42);
+
+}
+
+.form-row input {
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: royalblue;
+    border: 3px solid royalblue;
+    transform: scale(1, 1);
+}
+
+.Phone-img {
+    width: 25px;
+    object-fit: contain;
+
+}
+
+.email-img {
+
+    width: 25px;
+}
+
+.linked-img {
+    width: 25px;
+
+}
+
+.cont {
+    margin-top: 10px;
+    padding: 0;
+
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 380px;
+    border: 4px solid black;
+    border-radius: 20px;
+    margin-top: 5px;
+    height: 500px;
+    width: 60%;
+
+}
+
+
+
+
+
+.btn-primary {
+    margin-left: 150px;
+    margin-top: 10px;
+
+}
+
+.cnt-tbl {
+    display: flex;
+}
+
+
+
+footer {
+    background: #dfd9d9;
+    padding-top: 50px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.footer-content {
+    width: 33.3%;
+}
+
+.cnt {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p {
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+
+.footer-content ul {
+    text-align: center;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f18930;
+}
+
+.social-icons i:hover {
+    color: #f18930;
+}
+
+.bottom-bar {
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
